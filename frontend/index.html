@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Victory Powerlifting - Professional powerlifting coaching and training">
+    <meta name="keywords" content="powerlifting, strength training, coaching, fitness">
+    <title>Victory Powerlifting</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="elite">Victory</span><span class="powerlifting">Powerlifting</span>
+            </div>
+            
+            <button class="hamburger" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#services" data-content="navigation.services">Services</a></li>
+                <li><a href="#about" data-content="navigation.about">About</a></li>
+                <li><a href="#contact" data-content="navigation.contact">Contact</a></li>
+                <li class="language-selector">
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="hu">HU</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="services">
+            <h1 class="services-title" data-content="services.title">Services<span class="accent">.</span></h1>
+            
+            <div class="service-cards-container">
+                <!-- Basic Online Coaching Card -->
+                <div class="service-card" data-service="basic">
+                    <h2 data-content="title"></h2>
+                    <p class="price" data-content="price"></p>
+                    <p class="subtitle" data-content="subtitle"></p>
+                    <h3 class="packageIncludes" data-content="packageIncludes"></h3>
+                    <ul class="visible-content"></ul>
+                    <div class="button-container">
+                        <button class="contact-btn"></button>
+                    </div>
+                </div>
+
+                <!-- Online Coaching+ Card -->
+                <div class="service-card" data-service="plus">
+                    <h2 data-content="title"></h2>
+                    <p class="price" data-content="price"></p>
+                    <p class="subtitle" data-content="subtitle"></p>
+                    <h3 class="packageIncludes" data-content="packageIncludes"></h3>
+                    <ul class="visible-content"></ul>
+                    <ul class="hidden-content"></ul>
+                    <div class="button-container">
+                        <button class="contact-btn"></button>
+                        <button class="show-more"></button>
+                    </div>
+                </div>
+
+                <!-- Elite Performance Card -->
+                <div class="service-card" data-service="elite">
+                    <h2 data-content="title"></h2>
+                    <p class="price">
+                        <span class="original-price" data-content="originalPrice"></span>
+                        <span class="special-price" data-content="price"></span>
+                    </p>
+                    <p class="subtitle" data-content="subtitle"></p>
+                    <h3 class="packageIncludes" data-content="packageIncludes"></h3>
+                    <ul class="visible-content"></ul>
+                    <ul class="hidden-content"></ul>
+                    <div class="button-container">
+                        <button class="contact-btn"></button>
+                        <button class="show-more"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h1 class="about-title" data-content="about.title">About<span class="accent">.</span></h1>
+            
+            <div class="about-container">
+                <div class="about-content">
+                    <h2 class="about-subtitle" data-content="about.subtitle"></h2>
+                    <p class="about-description" data-content="about.description"></p>
+                    
+                    <h2 class="achievements-title" data-content="about.achievements.title"></h2>
+                    <ul class="achievements-list">
+                        <!-- Items will be populated by JavaScript -->
+                    </ul>
+                </div>
+                
+                <div class="about-image">
+                    <img src="/assets/viki.png" alt="Professional powerlifting coach" class="coach-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1 class="contact-title" data-content="contact.title">Contact Us<span class="accent">.</span></h1>
+            
+            <div class="contact-container">
+                <!-- Left side - Contact Info -->
+                <div class="contact-info">
+                    <h2 class="contacts-heading" data-content="contact.contacts.heading">Contacts</h2>
+                    <div class="contact-details">
+                        <a href="mailto:info@victorypowerlifting.com" class="contact-detail">info@victorypowerlifting.com</a>
+                        <a href="tel:+36123456789" class="contact-detail">+36 12 345 6789</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/viki.majoros13?mibextid=wwXlfr" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.twitter.com/victorypowerlifting" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/majorosviki" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right side - Contact Form -->
+                <div class="contact-form-container">
+                    <h2 class="form-heading" data-content="contact.form.heading">Contact form</h2>
+                    <form name="contact-form" method="POST" data-netlify="true" id="contact-form" class="contact-form">
+                        <input type="hidden" name="form-name" value="contact-form">
+                        
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name" data-content="contact.form.name">NAME</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email" data-content="contact.form.email">EMAIL</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" required placeholder=" "></textarea>
+                            <label for="message" data-content="contact.form.message">MESSAGE</label>
+                        </div>
+                        
+                        <button type="submit" class="send-message-btn" data-content="contact.form.send">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p class="copyright" data-content="footer.copyright"></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/navigation.js"></script>
+    <script src="/js/language-switcher.js"></script>
+    <script src="/js/services.js"></script>
+</body>
+</html> 

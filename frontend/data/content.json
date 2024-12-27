@@ -1,0 +1,185 @@
+{
+    "en": {
+        "services": {
+            "title": "Services",
+            "packageIncludes": "This package includes:",
+            "basic": {
+                "title": "Online Coaching",
+                "price": "45 € pro month",
+                "subtitle": "For hobby athletes",
+                "features": [
+                    "Weekly training programme and nutritional recommendations.",
+                    "Common questions answered by e-mail."
+                ]
+            },
+            "plus": {
+                "title": "Online Coaching+",
+                "price": "60 € pro month",
+                "subtitle": "For those who require continuous training/diet changes.",
+                "features": [
+                    "Customized weekly training plan and nutrition plan.",
+                    "Video exercise correction, technical analysis."
+                    
+                ],
+                "hiddenFeatures": [
+                   "Regular form checks and feedback.",
+                    "Monthly program adjustments.",
+                    "Monthly progress tracking and measurements",
+                    "Technique analysis with video feedback",
+                    "Competition preparation guidance",
+                    "Nutrition adjustments based on progress",
+                    "Access to exercise technique library"
+                ]
+            },
+            "elite": {
+                "title": "ELITE PERFORMANCE",
+                "price": "This year only 75 € pro month",
+                "originalPrice": "95 €",
+                "subtitle": "For those who want to get the most out of themselves. For competitors and hobby athletes alike.",
+                "features": [
+                    "Everything that is included in Online Coaching+",
+                    "In addition:..."
+                ],
+                "hiddenFeatures": [
+                    "Priority support and communication",
+                    "Weekly video calls",
+                    "Advanced programming techniques",
+                    "Competition day coaching",
+                    "Recovery strategies",
+                    "Mental preparation coaching"
+                ]
+            }
+        },
+        "about": {
+            "title": "About",
+            "subtitle": "Who am I?",
+            "description": "Professional powerlifter and strength coach with years of experience in training athletes and hobby lifters alike. Specialized in powerlifting technique, programming, and competition preparation.",
+            "achievements": {
+                "title": "Achievements",
+                "items": [
+                    "Multiple national champion",
+                    "International competitor",
+                    "Certified strength coach",
+                    "5+ years of coaching experience"
+                ]
+            }
+        },
+        "contact": {
+            "title": "Contact Us",
+            "contacts": {
+                "heading": "Contacts"
+            },
+            "form": {
+                "heading": "Contact form",
+                "name": "NAME",
+                "email": "EMAIL",
+                "message": "MESSAGE",
+                "send": "SEND MESSAGE"
+            }
+        },
+        "buttons": {
+            "contact": "Contact me",
+            "showMore": "Show more",
+            "showLess": "Show less"
+        },
+        "footer": {
+            "copyright": "© 2024 Victory Powerlifting. All rights reserved."
+        },
+        "navigation": {
+            "services": "Services",
+            "about": "About",
+            "contact": "Contact"
+        }
+    },
+    "hu": {
+        "services": {
+            "title": "Szolgáltatások",
+            "packageIncludes": "A csomag tartalmazza:",
+            "basic": {
+                "title": "Online Edzés",
+                "price": "45 € havonta",
+                "subtitle": "Hobbi sportolóknak",
+                "features": [
+                    "Heti edzésprogram és táplálkozási ajánlások.",
+                    "Általános kérdések megválaszolása e-mailben."
+                ]
+            },
+            "plus": {
+                "title": "Online Edzés+",
+                "price": "60 € havonta",
+                "subtitle": "Azoknak, akiknek folyamatos edzés/étrend változtatásokra van szükségük.",
+                "features": [
+                    "Személyre szabott heti edzésterv és étrend.",
+                    "Videós gyakorlat korrekció, technikai elemzés."
+                ],
+                "hiddenFeatures": [
+                    "Rendszeres forma ellenőrzés és visszajelzés.",
+                    "Havi program módosítások.",
+                    "Havi fejlődés követése és mérések",
+                    "Technika elemzés videós visszajelzéssel",
+                    "Verseny felkészülési útmutató",
+                    "Étrend módosítások a fejlődés alapján",
+                    "Hozzáférés gyakorlat technikai könyvtárhoz"
+                ]
+            },
+            "elite": {
+                "title": "ELIT TELJESÍTMÉNY",
+                "price": "Csak ebben az évben 75 € havonta",
+                "originalPrice": "95 €",
+                "subtitle": "Azoknak, akik a maximumot akarják kihozni magukból. Versenyzőknek és hobbi sportolóknak egyaránt.",
+                "features": [
+                    "Minden, ami az Online Edzés+ csomagban található",
+                    "Továbbá:..."
+                ],
+                "hiddenFeatures": [
+                    "Elsőbbségi támogatás és kommunikáció",
+                    "Heti videóhívások",
+                    "Haladó programozási technikák",
+                    "Verseny napi edzés",
+                    "Regenerációs stratégiák",
+                    "Mentális felkészítés"
+                ]
+            }
+        },
+        "about": {
+            "title": "Rólam",
+            "subtitle": "Ki vagyok én?",
+            "description": "Profi erőemelő és erőnléti edző, több éves tapasztalattal versenyzők és hobbi sportolók edzésében. Specializálódtam az erőemelő technikára, programozásra és versenyfelkészítésre.",
+            "achievements": {
+                "title": "Eredmények",
+                "items": [
+                    "Többszörös országos bajnok",
+                    "Nemzetközi versenyző",
+                    "Minősített erőnléti edző",
+                    "5+ év edzői tapasztalat"
+                ]
+            }
+        },
+        "contact": {
+            "title": "Kapcsolat",
+            "contacts": {
+                "heading": "Elérhetőségek"
+            },
+            "form": {
+                "heading": "Kapcsolati űrlap",
+                "name": "NÉV",
+                "email": "EMAIL",
+                "message": "ÜZENET",
+                "send": "ÜZENET KÜLDÉSE"
+            }
+        },
+        "buttons": {
+            "contact": "Kapcsolat",
+            "showMore": "Mutass többet",
+            "showLess": "Mutass kevesebbet"
+        },
+        "footer": {
+            "copyright": "© 2024 Victory Powerlifting. Minden jog fenntartva."
+        },
+        "navigation": {
+            "services": "Szolgáltatások",
+            "about": "Rólam",
+            "contact": "Kapcsolat"
+        }
+    }
+} 

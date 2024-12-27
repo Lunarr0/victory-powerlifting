@@ -1,0 +1,632 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header/Navigation */
+.navbar {
+    background-color: black;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.logo .elite {
+    color: red;
+}
+
+.logo .powerlifting {
+    color: white;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Language Selector */
+.language-selector {
+    display: flex;
+    gap: 5px;
+}
+
+.lang-btn {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.lang-btn.active {
+    background: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    padding: 30px 20px;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-links a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ff4444;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #666;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff4444;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left, .footer-right {
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .social-links {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+/* Hide hamburger by default */
+.hamburger {
+    display: none;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        color: white;
+        background: none;
+        border: none;
+        font-size: 24px;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: black;
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* Services Section */
+#services {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+}
+.services-title .accent {
+    color: #ff4444;
+}
+
+#services h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+/* Service Cards */
+.service-card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 30px;
+    height: 350px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card content layout */
+.service-card h2 {
+    margin-bottom: 15px;
+}
+
+.service-card .price {
+    margin-bottom: 10px;
+}
+
+.service-card .subtitle {
+    font-style: italic;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+/* Button container */
+.service-card .button-container {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* When expanded */
+.service-card.expanded {
+    height: auto;
+}
+
+/* Service cards container */
+.service-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: start;
+}
+
+/* Hidden content */
+.hidden-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-card.expanded .hidden-content {
+    display: block;
+    opacity: 1;
+}
+
+/* Consultation Card */
+.consultation {
+    background-color: rgba(69, 69, 69, 0.8);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    display: flex;        
+    flex-direction: column;  
+    align-items: center; 
+}
+
+.consultation .availability {
+    color: #ccc;
+    font-style: italic;
+    margin: 10px 0;
+}
+.consultation .contact-btn {
+    align-self: center;      /* Change from flex-start to center */
+}
+
+/* Buttons */
+.contact-btn {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+}
+
+.contact-btn:hover {
+    background-color: #ff6666;
+}
+
+.show-more {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: auto;
+}
+
+.show-more::after {
+    content: '▼';
+    font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    #services h1 {
+        font-size: 36px;
+    }
+
+    .service-card {
+        margin: 0 10px;
+    }
+}
+
+/* Contact Section */
+#contact {
+    background-color: #111;
+    color: white;
+    padding: 60px 20px;
+}
+
+.contact-title {
+    font-size: 72px;
+    margin-bottom: 60px;
+    padding-left: 20px;
+}
+
+.contact-title .accent {
+    color: #ff4444;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding: 0 20px;
+}
+
+/* Contact Info Styles */
+.contact-info {
+    padding-top: 20px;
+}
+
+.contacts-heading {
+    color: #666;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.contact-details {
+    margin-bottom: 20px;
+}
+
+.contact-detail {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.social-links {
+    display: block;
+    gap: 40px;
+   
+}
+
+.social-link {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Contact Form Styles */
+.contact-form-container {
+    background-color: #222;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.form-heading {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 16px;
+    color: #666;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: none;
+}
+
+.form-group label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #666;
+    font-size: 16px;
+    pointer-events: none;
+    padding: 15px 0;
+    transition: 0.3s ease all;
+}
+
+/* Move label up when input is focused or has content */
+.form-group input:focus ~ label,
+.form-group textarea:focus ~ label,
+.form-group input:valid ~ label,
+.form-group textarea:valid ~ label {
+    top: -20px;
+    font-size: 12px;
+    color: #666;
+    padding: 0;
+}
+
+/* Add styles for when input has content */
+.form-group input:not(:placeholder-shown) ~ label,
+.form-group textarea:not(:placeholder-shown) ~ label {
+    top: -20px;
+    font-size: 12px;
+    color: #666;
+    padding: 0;
+}
+
+.send-message-btn {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-title {
+        font-size: 48px;
+    }
+}
+
+/* About Section */
+#about {
+    background-color: #111;
+    color: white;
+    padding: 60px 20px;
+}
+
+.about-title {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.about-title .accent {
+    color: #ff4444;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content {
+    padding: 20px;
+}
+
+.about-subtitle,
+.achievements-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ff4444;
+}
+
+.about-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.achievements-list {
+    list-style: none;
+}
+
+.achievements-list li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.achievements-list li::before {
+    content: "•";
+    color: #ff4444;
+    position: absolute;
+    left: 0;
+    font-size: 24px;
+}
+
+.about-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coach-image {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-title {
+        font-size: 36px;
+    }
+    
+    .about-image {
+        order: -1;
+    }
+}
+
+/* Show More/Less functionality */
+.hidden-content {
+    display: none;
+    opacity: 0;
+    height: 0;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.service-card.expanded .hidden-content {
+    display: block;
+    opacity: 1;
+    height: auto;
+}
+
+.visible-content {
+    margin-bottom: 15px;
+}
+
+.service-card ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.service-card ul li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.service-card ul li:before {
+    content: "•";
+    color: #ff4444;
+    position: absolute;
+    left: -20px;
+}
+
+/* Rest of your show more button styles remain the same */
+.show-more {
+    background: none;
+    border: none;
+    color: #ff4444;
+    cursor: pointer;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.show-more::after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #ff4444;
+    border-bottom: 2px solid #ff4444;
+    transform: rotate(45deg);
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.service-card.expanded .show-more::after {
+    transform: rotate(-135deg);
+} 
