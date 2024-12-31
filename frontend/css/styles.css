@@ -26,8 +26,9 @@ body {
 }
 
 .logo img {
-    height: 120px;
-    width: auto;
+    height: 60px;
+    width: 200px;
+    object-fit: contain;
     margin-right: 10px;
 }
 
@@ -196,8 +197,8 @@ footer {
     }
 
     .logo img {
-        height: 95px;
-    
+        height: 45px;
+        width: 150px;
     }
 }
 
