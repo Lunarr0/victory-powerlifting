@@ -21,10 +21,14 @@ body {
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 120px;
+    width: auto;
+    margin-right: 10px;
 }
 
 .logo .elite {
@@ -166,11 +170,13 @@ footer {
         background: none;
         border: none;
         font-size: 24px;
+        cursor: pointer;
+        z-index: 1000;
     }
 
     .nav-links {
         display: none;
-        position: absolute;
+        position: fixed;
         top: 60px;
         left: 0;
         right: 0;
@@ -178,10 +184,20 @@ footer {
         flex-direction: column;
         padding: 20px;
         text-align: center;
+        z-index: 999;
     }
 
     .nav-links.active {
         display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .logo img {
+        height: 95px;
+    
     }
 }
 
@@ -205,7 +221,7 @@ footer {
     background-color: #333;
     border-radius: 10px;
     padding: 30px;
-    height: 350px;
+    height: 450px;
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;

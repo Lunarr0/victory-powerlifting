@@ -5,62 +5,73 @@
             "packageIncludes": "This package includes:",
             "basic": {
                 "title": "Online Coaching",
-                "price": "45 € pro month",
-                "subtitle": "For hobby athletes",
+                "price": "50 € pro month",
+                "subtitle": "For competitors and hobby athletes alike. Helping you to reach whatever fitness goal you dream about, whether it’s dropping a pants size or winning a powerlifting meet.",
                 "features": [
-                    "Weekly training programme and nutritional recommendations.",
-                    "Common questions answered by e-mail."
-                ]
-            },
-            "plus": {
-                "title": "Online Coaching+",
-                "price": "60 € pro month",
-                "subtitle": "For those who require continuous training/diet changes.",
-                "features": [
-                    "Customized weekly training plan and nutrition plan.",
+                    "Customized weekly training plan.",
                     "Video exercise correction, technical analysis."
-                    
                 ],
                 "hiddenFeatures": [
-                   "Regular form checks and feedback.",
-                    "Monthly program adjustments.",
-                    "Monthly progress tracking and measurements",
-                    "Technique analysis with video feedback",
-                    "Competition preparation guidance",
-                    "Nutrition adjustments based on progress",
-                    "Access to exercise technique library"
+                    "Personalized nutritional recommendations.",
+                    "Weight-cut protocols for athletes.",
+                    "Prehab, rehab and mobility exercises.",
+                    "Daily online contact."
+                    
                 ]
             },
-            "elite": {
-                "title": "ELITE PERFORMANCE",
-                "price": "This year only 75 € pro month",
-                "originalPrice": "95 €",
-                "subtitle": "For those who want to get the most out of themselves. For competitors and hobby athletes alike.",
+            "consultation": {
+                "title": "One time consultation",
+                "price": "25 € per session.",
+                "subtitle": "For those trying to get the most out of themselves.",
                 "features": [
-                    "Everything that is included in Online Coaching+",
-                    "In addition:..."
+                    "60-90 minutes consulting session via phone or online meeting.",
+                    "We can cover any pre selected topics, including training programming, exercise technique, nutrition, weight cutting, food allergies or dealing with injuries and pains."
+                ]
+            },
+            "nutrition": {
+                "title": "Nutrition Coaching",
+                "price": "25 € per month",
+                "subtitle": "AVAILABLE FOR PEOPLE WITH FOOD ALLERGIES!",
+                "features": [
+                    "Nutrition plan tailored to your goals, liking and lifestyle.",
+                    "3-5 variations for each meal."
                 ],
                 "hiddenFeatures": [
-                    "Priority support and communication",
-                    "Weekly video calls",
-                    "Advanced programming techniques",
-                    "Competition day coaching",
-                    "Recovery strategies",
-                    "Mental preparation coaching"
+                    "Pre weigh-in cutting protocol for athletes.",
+                    "Weekly check-ins, evaluating results.",
+                    "Daily online contact in case of questions."
+                ]
+            },
+            "rehab": {
+                "title": "Rehab Services",
+                "price": "40 € one time cost",
+                "originalPrice": "85 €",
+                "subtitle": "Specialized for powerlifters and strength athletes experiencing aches, pains or injury.",
+                "features": [
+                    "Preliminary physical inspection.",
+                    "Online or in-person consulting session."
+                ],
+                "hiddenFeatures": [
+                    "Detailed exercise plan with videos.",
+                    "Suggested technical modifications for the main lifts.",
+                    "Further consultations and check-ins."
                 ]
             }
         },
         "about": {
             "title": "About",
             "subtitle": "Who am I?",
-            "description": "Professional powerlifter and strength coach with years of experience in training athletes and hobby lifters alike. Specialized in powerlifting technique, programming, and competition preparation.",
+            "description": "Medical student, powerlifter and strength coach, with years of experience in training competitors and hobby athletes alike, specialized in powerlifting training, competition preparation and dealing with injuries and aches.Besides, I am allergic to gluten, lactose and eggs, therefore I can offer specialized help for those in the same shoes.",
             "achievements": {
                 "title": "Achievements",
                 "items": [
-                    "Multiple national champion",
-                    "International competitor",
-                    "Certified strength coach",
-                    "5+ years of coaching experience"
+                    "Active, international level powerlifter since 2018",
+                    "4 years of experience as a powerlifting coach",
+                    "3x female junior absolute winner of HPC League Cup",
+                    "8 national records at Hungarian Powerlifting Congress",
+                    "3 world records at World Powerlifting Congress",
+                    "Young Guns Pro Invitational 2023 1st place",
+                    "Irish Pro Invitational 2024 3rd place"
                 ]
             }
         },
@@ -97,61 +108,72 @@
             "packageIncludes": "A csomag tartalmazza:",
             "basic": {
                 "title": "Online Edzés",
-                "price": "45 € havonta",
-                "subtitle": "Hobbi sportolóknak",
+                "price": "20.000 Ft havonta",
+                "subtitle": "Versenyzők és hobbisportolók részére egyaránt. Segítek elérni bármilyen fitnesz célt, amiről álmodsz, legyen az egy kisebb ruhaméret elérése vagy egy erőemelő verseny megnyerése.",
                 "features": [
-                    "Heti edzésprogram és táplálkozási ajánlások.",
-                    "Általános kérdések megválaszolása e-mailben."
-                ]
-            },
-            "plus": {
-                "title": "Online Edzés+",
-                "price": "60 € havonta",
-                "subtitle": "Azoknak, akiknek folyamatos edzés/étrend változtatásokra van szükségük.",
-                "features": [
-                    "Személyre szabott heti edzésterv és étrend.",
-                    "Videós gyakorlat korrekció, technikai elemzés."
+                    "Személyre szabott heti edzéstervezés.",
+                    "Gyakorlatok videós elemzése, technika fejlesztése."
                 ],
                 "hiddenFeatures": [
-                    "Rendszeres forma ellenőrzés és visszajelzés.",
-                    "Havi program módosítások.",
-                    "Havi fejlődés követése és mérések",
-                    "Technika elemzés videós visszajelzéssel",
-                    "Verseny felkészülési útmutató",
-                    "Étrend módosítások a fejlődés alapján",
-                    "Hozzáférés gyakorlat technikai könyvtárhoz"
+                    "Egyénre szabott táplálkozási tanácsadás.",
+                    "Segítség a fogyasztásban versenyzők számára.",
+                    "Prehab, rehab és mobilizációs gyakorlatok.",
+                    "Napi szintű online kapcsolattartás."
                 ]
             },
-            "elite": {
-                "title": "ELIT TELJESÍTMÉNY",
-                "price": "Csak ebben az évben 75 € havonta",
-                "originalPrice": "95 €",
-                "subtitle": "Azoknak, akik a maximumot akarják kihozni magukból. Versenyzőknek és hobbi sportolóknak egyaránt.",
+            "consultation": {
+                "title": "Egyszeri konzultáció",
+                "price": "10.000 Ft per alkalom",
+                "subtitle": "Azoknak, akiknek a legtöbbet akarják kihozni magukból.",
                 "features": [
-                    "Minden, ami az Online Edzés+ csomagban található",
-                    "Továbbá:..."
+                    "60-90 perces telefonos vagy online konzultáció.",
+                    "Bármilyen előre kiválasztott témát érinthetünk, legyen az edzéstervezés, technika, táplálkozás, fogyasztás, ételallergiák vagy sérülések, fájdalmak kezelése."
+                ]
+            },
+            "nutrition": {
+                "title": "Étrend coaching",
+                "price": "10.000 Ft havonta",
+                "subtitle": "ÉTELALLERGIÁSOK SZÁMÁRA IS!",
+                "features": [
+                    "Egyénre szabott étrend céljaidhoz, ízlésedhez és életstílusodhoz igazítva.",
+                    "3-5 variáció minden étkezésre."
                 ],
                 "hiddenFeatures": [
-                    "Elsőbbségi támogatás és kommunikáció",
-                    "Heti videóhívások",
-                    "Haladó programozási technikák",
-                    "Verseny napi edzés",
-                    "Regenerációs stratégiák",
-                    "Mentális felkészítés"
+                    "Versenyzők számára fogyasztási protokoll a mérlegelések előtt.",
+                    "Heti check-in rendszer és eredmények kiértékelése.",
+                    "Napi kapcsolattartás, bármilyen kérdés esetén."
+                ]
+            },
+            "rehab": {
+                "title": "Rehab szolgáltatás",
+                "price": "15.000 Ft egyszeri költség",
+                "originalPrice": "30.000 Ft",
+                "subtitle": "Olyan erőemelők és sportolók számára, akik fájdalmakkal és sérülésekkel bajlódnak.",
+                "features": [
+                    "Előzetes online állapotfelmérés.",
+                    "Konzultáció online vagy személyes formában."
+                ],
+                "hiddenFeatures": [
+                    "Részletes gyakorlatsor, videókkal.",
+                    "Tanácsok a versenygyakorlatok technikai kivitelezésében.",
+                    "További konzultációk és check-inek."
                 ]
             }
         },
         "about": {
             "title": "Rólam",
-            "subtitle": "Ki vagyok én?",
-            "description": "Profi erőemelő és erőnléti edző, több éves tapasztalattal versenyzők és hobbi sportolók edzésében. Specializálódtam az erőemelő technikára, programozásra és versenyfelkészítésre.",
+            "subtitle": "Ki vagyok?",
+            "description": "Orvostanhallgató, erőemelő versenyző és edző, aki több éve foglalkozik versenyzőkkel és hobbisportolókkal, specializálódva az erőemelő fogásnemekre, a versenyfelkészítésre és a különböző sérülések, fájdalmak kezelésére.Emellett glutén- és laktózérzékenyként, illetve tojásallergiásként egyedi segítséget tudok nyújtani a hasonló problémákkal küzdőknek.",
             "achievements": {
                 "title": "Eredmények",
                 "items": [
-                    "Többszörös országos bajnok",
-                    "Nemzetközi versenyző",
-                    "Minősített erőnléti edző",
-                    "5+ év edzői tapasztalat"
+                    "2018 óta aktív, nemzetközi szintű erőemelő versenyző",
+                    "Négy év tapasztalat erőemelő edzőként",
+                    "3x női junior abszolút győztes a Magyar Professzinális Erőemelő Liga Kupán",
+                    "8 rekord a Magyar Professzionális Erőemelő Ligánál",
+                    "3 világrekord a World Powerlifting Congress szövetségnél",
+                    "Young Guns Pro Invitational 2023 1. hely",
+                    "Irish Pro Invitational 2024 3. hely"
                 ]
             }
         },
