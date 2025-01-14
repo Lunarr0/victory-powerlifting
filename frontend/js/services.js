@@ -57,8 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // Store the title in localStorage
             localStorage.setItem('selectedService', serviceTitle);
             
-            // Open the coaching form in a new window
-            window.open('coaching-form.html', '_blank');
+            // Navigate to the coaching form in the same window
+            window.location.href = 'coaching-form.html';
         });
     });
 }); 
