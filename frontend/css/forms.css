@@ -295,14 +295,15 @@ body {
 }
 
 /* Service type specific styling */
-#service-type-display {
-    margin-top: 20px; /* Add space above the input */
+#service-type-label {
+    margin-top: 80px; /* Add space above the input */
 }
 
 #service-type-display + label {
-    top: -20px !important; /* Force label to stay up */
+    top: -15x !important; /* Force label to stay up */
     font-size: 13px;
     color: rgba(255, 255, 255, 0.6);
+    
 }
 
 /* For readonly inputs */
@@ -317,4 +318,68 @@ body {
     font-size: 13px;
     color: rgba(255, 255, 255, 0.6);
     transform: none !important;
+}
+
+/* Service type display styling */
+#service-type-display {
+    font-size: 32px;
+    color: rgba(255, 255, 255, 0.7);
+    border: none;
+    background: transparent;
+    width: 100%;
+    padding: 0;
+    font-weight: 300;  /* Lighter weight for contrast */
+    letter-spacing: 0.5px;
+    text-transform: none;  /* In case it was inherited */
+    font-family: inherit;
+    line-height: 1.4;
+    display: block;
+   
+    border-bottom: none !important;  /* Remove any inherited border */
+}
+
+/* Remove any hover effects */
+#service-type-display:hover,
+#service-type-display:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.form-container h1 {
+    font-size: 48px;
+    margin-bottom: 10px;  /* Reduced margin */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Service type group specific styling */
+.service-type-group {
+    margin-bottom: 40px;
+}
+
+.service-type-group label {
+    display: block;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 30px;
+}
+
+.service-type-group input {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.8);
+    border: none;
+    background: transparent;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Remove any hover/focus effects for readonly input */
+.service-type-group input:focus {
+    outline: none;
+    border: none;
 }
