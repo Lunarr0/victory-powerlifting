@@ -14,8 +14,11 @@
         <form name="coaching-service" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="coaching-service">
             
-            <input type="text" id="service-type-display" name="service-type" placeholder="" hidden>
-
+            <div class="form-group">
+                <input type="text" id="service-type-display" name="service-type" placeholder="" hidden>
+                <label for="service-type-display">SERVICE TYPE</label>
+            </div>
+            
             <div class="form-group">
                 <input type="text" id="name" name="full-name" placeholder="" required>
                 <label for="name">NAME</label>
