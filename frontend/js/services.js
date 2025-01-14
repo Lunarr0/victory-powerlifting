@@ -40,10 +40,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Add click handlers for contact buttons
+    // document.querySelectorAll('.contact-btn').forEach(button => {
+    //     button.addEventListener('click', () => {
+    //         // You can replace this URL with any link you want
+    //         window.open('https://docs.google.com/forms/d/e/1FAIpQLSdpnxbBNM8ZaAJZg3beTR-q0uzQKLsTCXoHiWrjYJ4CAuBcTg/viewform', '_blank');
+    //     });
+    // });
+
+    // Add click handlers for contact buttons
     document.querySelectorAll('.contact-btn').forEach(button => {
         button.addEventListener('click', () => {
-            // You can replace this URL with any link you want
-            window.open('https://docs.google.com/forms/d/e/1FAIpQLSdpnxbBNM8ZaAJZg3beTR-q0uzQKLsTCXoHiWrjYJ4CAuBcTg/viewform', '_blank');
+            // Get the title from the closest service-card
+            const serviceCard = button.closest('.service-card');
+            const serviceTitle = serviceCard.querySelector('h2').textContent;
+            
+            // Store the title in localStorage
+            localStorage.setItem('selectedService', serviceTitle);
+            
+            // Open the coaching form in a new window
+            window.open('coaching-form.html', '_blank');
         });
     });
 }); 

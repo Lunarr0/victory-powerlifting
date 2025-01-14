@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Coaching Form </title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/forms.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="form-heading">Online Coaching Application</h1>
+        <form name="online-coaching" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="online-coaching">
+            
+            <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="" required>
+                <label for="name">NAME</label>
+            </div>
+            
+            <div class="form-group">
+                <input type="email" id="email" name="email"  placeholder="" required>
+                <label for="email">EMAIL ADDRESS</label>
+            </div>
+            
+            <div class="form-group">
+                <label>PREFERRED PLATFORM</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="platform" value="instagram" required>
+                        Instagram
+                    </label>
+                    <label>
+                        <input type="radio" name="platform" value="messenger">
+                        Facebook
+                    </label>
+                    <label>
+                        <input type="radio" name="platform" value="imessage">
+                        iMessage
+                    </label>
+                    <label>
+                        <input type="radio" name="platform" value="whatsapp">
+                        Whatsapp
+                    </label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>CAN YOU RECORD YOURSELF DURING TRAINING?</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="can_record" value="yes" required>
+                        Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="can_record" value="no">
+                        No
+                    </label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <input type="text" id="experience" name="experience" required>
+                <label for="experience">HOW LONG HAVE YOU BEEN TRAINING FOR?</label>
+            </div>
+            
+            <div class="form-group">
+                <input type="number" id="training_frequency" name="training_frequency" required min="1" max="7">
+                <label for="training_frequency">HOW MANY TIMES CAN YOU TRAIN IN A WEEK?</label>
+            </div>
+            
+            <button type="submit" class="submit-btn">SUBMIT APPLICATION</button>
+        </form>
+    </div>
+</body>
+</html> 

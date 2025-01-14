@@ -222,7 +222,7 @@ footer {
     background-color: #333;
     border-radius: 10px;
     padding: 30px;
-    height: 450px;
+    height: 530px;
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -301,6 +301,7 @@ footer {
 
 /* Buttons */
 .contact-btn {
+    text-decoration: none;  /* Remove underline */
     background-color: #ff4444;
     color: white;
     border: none;
