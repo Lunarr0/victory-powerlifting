@@ -33,6 +33,7 @@
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
     outline: none;
     transition: all 0.3s ease;
+    margin-top: 20px;
 }
 
 /* Label styling */
@@ -61,6 +62,7 @@
     pointer-events: none;
     transition: all 0.3s ease;
     letter-spacing: 0.5px;
+    margin-top: 20px;
 }
 
 /* Radio group container */
@@ -231,6 +233,7 @@ body {
     outline: none;
     cursor: pointer;
     appearance: none;
+    margin-bottom: 20px;
     -webkit-appearance: none;
     -moz-appearance: none;
 }
@@ -240,6 +243,7 @@ body {
     background-color: #222;
     color: rgba(255, 255, 255, 0.6);
     padding: 15px;
+   
 }
 
 /* Add a custom arrow */
@@ -250,7 +254,7 @@ body {
 .form-group select + label {
     position: absolute;
     left: 0;
-    top: -20px;
+    top: -40px;
     font-size: 13px;
     color: rgba(255, 255, 255, 0.6);
     pointer-events: none;
@@ -362,7 +366,7 @@ body {
     display: block;
     font-size: 13px;
     color: rgba(255, 255, 255, 0.6);
-    margin-bottom: 8px;
+    margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-top: 30px;
