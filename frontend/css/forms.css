@@ -295,11 +295,11 @@ body {
 }
 
 /* Service type specific styling */
-#service-type-visible {
+#service-type-display {
     margin-top: 20px; /* Add space above the input */
 }
 
-#service-type-visible + label {
+#service-type-display + label {
     top: -20px !important; /* Force label to stay up */
     font-size: 13px;
     color: rgba(255, 255, 255, 0.6);
