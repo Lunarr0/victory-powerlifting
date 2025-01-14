@@ -3,34 +3,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const selectedService = localStorage.getItem('selectedService');
     
     if (selectedService) {
-        // Find the hidden input
+        // Find the hidden input and update its value
         const serviceTypeInput = document.querySelector('#service-type-display');
         if (serviceTypeInput) {
             serviceTypeInput.value = selectedService;
+            
+            // Make the input and its label visible
+            serviceTypeInput.hidden = false;
+            const formGroup = serviceTypeInput.closest('.form-group');
+            if (formGroup) {
+                formGroup.style.display = 'block';
+            }
         }
-        
-        // Create visible display of service type
-        const formGroup = document.createElement('div');
-        formGroup.classList.add('form-group');
-        
-        // Create the display input element
-        const serviceDisplay = document.createElement('input');
-        serviceDisplay.type = 'text';
-        serviceDisplay.value = selectedService;
-        serviceDisplay.readOnly = true;
-        serviceDisplay.id = 'service-type-visible';
-        
-        // Create the label
-        const label = document.createElement('label');
-        label.htmlFor = 'service-type-visible';
-        label.textContent = 'SERVICE TYPE';
-        
-        // Add elements to form group
-        formGroup.appendChild(serviceDisplay);
-        formGroup.appendChild(label);
-        
-        // Insert after the form heading
-        const form = document.querySelector('form');
-        form.insertBefore(formGroup, form.firstChild);
+    }
+
+    // Handle form submission
+    const form = document.querySelector('form[name="coaching-service"]');
+    const submitButton = document.querySelector('.submit-btn');
+
+    if (form) {
+        form.addEventListener('submit', (e) => {
+            // Don't prevent default - let Netlify handle the submission
+            
+            // Change button text to show loading
+            submitButton.textContent = 'Submitting...';
+            submitButton.disabled = true;
+
+            // Clear localStorage
+            localStorage.removeItem('selectedService');
+
+            // Redirect to home page after submission
+            // We'll use the form's action attribute for success redirect
+        });
     }
 });
